@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>УПРАВЛЕНИЕ СПИСКОМ ПОКУПОК</title>
+    <style>
+    body {
+    margin: 0;
+    background: #F5F5F5;
+    }
+
+    div {
+    margin: 5%;
+    padding: 3px; /* Поля вокруг текста */
+    }
+
+    .box_block {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    text-align: center;
+}
+
+   .app {
+    border: 3px solid #666; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+    margin: 20px; /* Отступы вокруг */
+    }
+
+  </style>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+</head>
+<body>
+<h1 align="center" style="color:#696969">УПРАВЛЕНИЕ ПОКУПКАМИ</h1>
+<hr align="center">
+    <ul class="box_block">
+        <li><h8 style="color:#2F4F4F"> ☑ ДОБАВЛЕНИЕ ПОКУПКИ</h8></li>
+        <li><h8 style="color:#2F4F4F"> ☑ УДАЛЕНИЕ ПОКУПКИ</h8></li>
+        <li><h8 style="color:#2F4F4F"> ☑ ПЕРИОДИЧЕСКИЕ И РАЗОВЫЕ ПОКУПКИ</h8></li>
+        <li><h8 style="color:#2F4F4F"> ☑ АКТУАЛЬНЫЙ СПИСОК НА СЕГОДНЯШНИЙ ДЕНЬ</h8></li>
+    </ul>
+</hr>
+<hr>
+<div align="center">
+    <table>
+        <tr>
+            <td>
+                <form method="LINK" action="/actual.html/">
+                    <input type="submit" value="ПОКАЗАТЬ АКТУАЛЬНЫЙ СПИСОК">
+                </form>
+            </td>
+            <td>
+                <form method="LINK" action="/index.html/">
+                    <input type="submit" value="ОБНОВИТЬ ДАННЫЕ">
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>
+</hr>
+
+<div id="app" align="center"></div>
+<script src="/js/main.js"></script>
+</body>
+</html>
